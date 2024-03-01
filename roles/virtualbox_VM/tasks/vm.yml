@@ -1,0 +1,4 @@
+- name: ensure "{{ os_type }}" virtual machine "{{ vm_name }}" is present
+  createVm: 
+    vm_name: "{{ vm_name }}"
+    os_type: "{{ os_type }}"

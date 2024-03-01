@@ -1,0 +1,22 @@
+---
+# defaults file for virtualbox_VM
+os_type: debian11_64
+nb_processors: 2
+base_memory_MB: 1024
+iso: "Downloads/debian-12.4.0-amd64-DVD-1.iso" 
+iso_sata_port: 0
+user_account : "devopsadmin"
+user_password: "devopsadmin!" 
+user_fullname: "devops admin"
+timezone: "UTC"
+power: "powered off"
+#power: "running"
+
+disks:
+  - disk_path: "VirtualBox VMs/host001/vd001.vdi"
+    disk_size: 614400
+    sata_port: 1
+  
+  - disk_path: "VirtualBox VMs/host001/vd002.vdi"
+    disk_size: 204800
+    sata_port: 2

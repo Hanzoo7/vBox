@@ -1,0 +1,4 @@
+- name: ensure VM powerstate status "{{ vm_name }}"
+  powerstate: 
+    vm_name: "{{ vm_name }}"
+    power: "{{ power }}"

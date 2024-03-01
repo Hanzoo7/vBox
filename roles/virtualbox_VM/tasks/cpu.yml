@@ -1,0 +1,4 @@
+- name: ensure CPU setting on "{{ vm_name }}"
+  setProcessor: 
+    vm_name: "{{ vm_name }}"
+    nb_processors: "{{ nb_processors }}"

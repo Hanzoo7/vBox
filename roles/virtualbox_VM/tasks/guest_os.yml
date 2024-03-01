@@ -1,0 +1,9 @@
+- name: ensure OS deployed on "{{ vm_name }}"
+  setGuest_OS: 
+    vm_name: "{{ vm_name }}"
+    iso: "{{ iso }}"
+    iso_sata_port: "{{ iso_sata_port }}"
+    user_account : "{{ user_account }}"
+    user_password: "{{ user_password }}" 
+    user_fullname: "{{ user_fullname }}"
+    timezone: "{{ timezone }}"

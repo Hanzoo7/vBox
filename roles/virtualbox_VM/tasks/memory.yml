@@ -1,0 +1,4 @@
+- name: ensure memory setting on "{{ vm_name }}"
+  setBaseMemory: 
+    vm_name: "{{ vm_name }}"
+    base_memory_MB: "{{ base_memory_MB }}"

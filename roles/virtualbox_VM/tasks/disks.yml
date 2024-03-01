@@ -1,0 +1,15 @@
+- name: ensure disks paths and sizes on "{{ vm_name }}"
+  setDisk:
+    disk_path: "{{ item.disk_path }}"
+    disk_size: "{{ item.disk_size }}"
+  with_items: "{{ disks }}"
+
+- name: ensure disks on "{{ vm_name }}"
+  setAttachedDisk: 
+    vm_name: "{{ vm_name }}"
+    disk_path: "{{ item.disk_path }}"
+    sata_port: "{{ item.sata_port }}"
+  with_items: "{{ disks }}"
+
+
+

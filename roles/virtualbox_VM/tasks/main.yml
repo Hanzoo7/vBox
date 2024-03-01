@@ -1,0 +1,21 @@
+---
+# tasks file for virtualbox_VM
+
+- name: Ensure VM object {{ vm_name }}
+  ansible.builtin.include_tasks: vm.yml
+  
+- name: Ensure CPU {{ vm_name }}
+  ansible.builtin.include_tasks: cpu.yml
+
+- name: Ensure memory {{ vm_name }}
+  ansible.builtin.include_tasks: memory.yml
+
+- name: Ensure disks inventory {{ vm_name }}
+  ansible.builtin.include_tasks: disks.yml
+
+- name: Ensure OS configured {{ vm_name }}
+  ansible.builtin.include_tasks: guest_os.yml
+
+- name: Ensure VM powerstate status {{ vm_name }}
+  ansible.builtin.include_tasks: powerstate.yml
+

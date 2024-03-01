@@ -1,0 +1,3 @@
+---
+# vars file for virtualbox_VM
+vm_name: "host001"
