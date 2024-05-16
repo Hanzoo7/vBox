@@ -26,8 +26,6 @@ def main():
 
     vm_name = module.params['vm_name']
     nb_processors = module.params['nb_processors']
-
-
     
     if cpu_correct(vm_name, nb_processors):
         module.exit_json(changed=False, msg=f"no change")
